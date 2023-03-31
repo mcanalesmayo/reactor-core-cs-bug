@@ -1,5 +1,7 @@
 ## reactor-core fromCompletionStage bug
 
+See issue in reactore-core repo here: https://github.com/reactor/reactor-core/issues/3417
+
 Test to reproduce an issue where a Mono created with `Mono.fromCompletionStage` fails to propagate an error signal downstream.
 The issue can be reproduced in the following cases:
 - `mono.map` throws an unchecked exception
